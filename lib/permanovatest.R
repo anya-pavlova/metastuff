@@ -1,34 +1,42 @@
 library(vegan)
 
-species.ee <- species[meta.list$data.groups.ee$sample_id,]
-species.ka <- species[meta.list$data.groups.ka$sample_id,]
+top.species.ee <- chooseTOPfeature(species.ee, 85)
+top.species.ka <- chooseTOPfeature(species.ka, 85)
 
-total.m <- UniteMatrices(species.ee, species.ka)
-total.m.t <- t(total.m)
-fac <- as.character(rownames(total.m.t))
+a1 <- head(top.species.ee,1)
+a2 <- head(top.species.ka,3)
 
-per <- adonis(total.m.t~fac)
-per <- adonis(rbind(dat1a,dat1b)~fac)
+t.aa <- UniteMatrices(a1,a2)
+#t.aa <- UniteMatrices(top.species.ee, top.species.ka)
 
-t.spe.ee <- t(as.data.table(species.ee, keep.rownames = T))
-t.spe.ka <- t(as.data.table(species.ka, keep.rownames = T))
+t.aa <- t.aa[,c(1:3)]
 
-t.spe.ee[,1]
-t.spe.ka[,1]
+t.aa.2 <- t(t.aa)
 
-t.spe.ee <-  t.spe.ee[-1,]
-t.spe.ka <-  t.spe.ka[-1,]
-
-fac <- as.factor(c(rownames(t.spe.ee), rownames(t.spe.ka)))
-
-kk <-UniteMatrices(species.ka, species.ee)
+fac <- as.character(rownames(t.aa.2))
+per <- adonis(t.aa.2~fac, permutations = 9999, method = "bray")
 
 
 
-t.spe.ee <- t(species.ee)
-t.spe.ka <- t(species.ka)
+vegdist(t.aa, method = 'bray')
 
 
+library(vegan)
+library(MASS)
+data(varespec)
+vare.dis <- vegdist(varespec)
+hh <- vegan::vegdist(t.aa)
+t.aa[1:2,1:2]
+rowSums(t.aa)
+
+bcdist(t.aa)
+dist.all<-bcdist(bact.for.samp.id.all)
+dist.all.m <- as.matrix(dist.all)
+
+
+
+#test
+library(vegan)
 
 dat1a<-matrix(sample(c(0,1,1,1),200,replace=T),10,20)
 dat1b<-matrix(sample(c(0,1,1,1),200,replace=T),10,20)
@@ -46,13 +54,6 @@ per <- adonis(rbind(dat1a,dat1b)~fac)
 
 anova(betadisper(dist12,fac))
 adonis(rbind(dat1a,dat2)~fac)
-
-#test
-a <- matrix(rep(4, 12), 2,6)
-b <- matrix(rep(3, 12), 2,6)
-fac1 <- (fac<-gl(2,2))
-per <- adonis(rbind(dat1a,dat1b)~fac)
-
 
 
 betad <- betadiver(dune, "z")

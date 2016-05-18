@@ -37,8 +37,6 @@ make.short.name <- function(vector.names) {
 
 path.to.config <- file.path(current_directory, 'src', 'pathway.ini')
 pathway <- ReadIni(path.to.config) 
-path.to.config <- file.path(current_directory, 'src', 'pathway_ee_ka.ini')
-pathway.ee.ka <- ReadIni(path.to.config) 
 
 # loading meta data for EE and KA groups
 # LoadMeta
@@ -72,7 +70,7 @@ species <- ChooseProjectSamples(totalTable$species, data.project.samples)
 # [1] 1824
 # > length(unique(colnames(species.ee)))
 # [1] 1703
-colnames(species) <- make.short.name(colnames(species)) 
+##################colnames(species) <- make.short.name(colnames(species)) 
 ##
 
 family.ee <- ChooseProjectSamples(family, meta.list$data.samples.paired.ee)
