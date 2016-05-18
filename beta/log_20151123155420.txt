@@ -1,0 +1,139 @@
+Logging started at 15:54:20 on 23 Nov 2015
+QIIME version: 1.7.0
+
+qiime_config values:
+blastmat_dir	/home/qiime/qiime_software/blast-2.2.22-release/data
+sc_queue	all.q
+pynast_template_alignment_fp	/home/qiime/qiime_software/core_set_aligned.fasta.imputed
+cluster_jobs_fp	/home/qiime/qiime_software/qiime-1.7.0-release/bin/start_parallel_jobs.py
+assign_taxonomy_reference_seqs_fp	/home/qiime/qiime_software/gg_otus-12_10-release/rep_set/97_otus.fasta
+torque_queue	friendlyq
+template_alignment_lanemask_fp	/home/qiime/qiime_software/lanemask_in_1s_and_0s
+jobs_to_start	8
+cloud_environment	False
+qiime_scripts_dir	/home/qiime/qiime_software/qiime-1.7.0-release/bin
+denoiser_min_per_core	50
+working_dir	/tmp/
+python_exe_fp	/home/qiime/qiime_software/python-2.7.3-release/bin/python
+temp_dir	/tmp/
+blastall_fp	/home/qiime/qiime_software/blast-2.2.22-release/bin/blastall
+seconds_to_sleep	60
+assign_taxonomy_id_to_taxonomy_fp	/home/qiime/qiime_software/gg_otus-12_10-release/taxonomy/97_otu_taxonomy.txt
+
+parameter file values:
+parallel:jobs_to_start	8
+
+Input file md5 sums:
+otu_rarified/otu_table.biom: 9bbe10b482995a2d29246c6616faff97
+map_run.txt: b60aeec1ea2466b11a3fe352338363f5
+/home/qiime/qiime_software/gg_13_5_otus/trees/97_otus.tree: b7e76593bce82913af1cfb06edf15732
+
+Executing commands.
+
+# Build prefs file command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_prefs_file.py -m map_run.txt -o beta//prefs.txt  --mapping_headers_to_use SampleID,BarcodeSequence,LinkerPrimerSequence,Description
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (weighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/beta_diversity.py -i otu_rarified/otu_table.biom -o beta/ --metrics weighted_unifrac  -t /home/qiime/qiime_software/gg_13_5_otus/trees/97_otus.tree 
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (weighted_unifrac) command 
+mv beta//weighted_unifrac_otu_table.txt beta//weighted_unifrac_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (weighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/principal_coordinates.py -i beta//weighted_unifrac_dm.txt -o beta//weighted_unifrac_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 3D plots (continuous coloring, weighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_3d_plots.py -p beta//prefs.txt -i beta//weighted_unifrac_pc.txt -o beta//weighted_unifrac_3d_continuous/ -m map_run.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 3D plots (discrete coloring, weighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_3d_plots.py -b "SampleID,BarcodeSequence,LinkerPrimerSequence,Description" -i beta//weighted_unifrac_pc.txt -o beta//weighted_unifrac_3d_discrete/ -m map_run.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 2D plots (continuous coloring, weighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_2d_plots.py -p beta//prefs.txt -i beta//weighted_unifrac_pc.txt -o beta//weighted_unifrac_2d_continuous/ -m map_run.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 2D plots (discrete coloring, weighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_2d_plots.py -b "SampleID,BarcodeSequence,LinkerPrimerSequence,Description" -i beta//weighted_unifrac_pc.txt -o beta//weighted_unifrac_2d_discrete/ -m map_run.txt 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (unweighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/beta_diversity.py -i otu_rarified/otu_table.biom -o beta/ --metrics unweighted_unifrac  -t /home/qiime/qiime_software/gg_13_5_otus/trees/97_otus.tree 
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (unweighted_unifrac) command 
+mv beta//unweighted_unifrac_otu_table.txt beta//unweighted_unifrac_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (unweighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/principal_coordinates.py -i beta//unweighted_unifrac_dm.txt -o beta//unweighted_unifrac_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 3D plots (continuous coloring, unweighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_3d_plots.py -p beta//prefs.txt -i beta//unweighted_unifrac_pc.txt -o beta//unweighted_unifrac_3d_continuous/ -m map_run.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 3D plots (discrete coloring, unweighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_3d_plots.py -b "SampleID,BarcodeSequence,LinkerPrimerSequence,Description" -i beta//unweighted_unifrac_pc.txt -o beta//unweighted_unifrac_3d_discrete/ -m map_run.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 2D plots (continuous coloring, unweighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_2d_plots.py -p beta//prefs.txt -i beta//unweighted_unifrac_pc.txt -o beta//unweighted_unifrac_2d_continuous/ -m map_run.txt 
+
+Stdout:
+
+Stderr:
+
+# Make 2D plots (discrete coloring, unweighted_unifrac) command 
+/home/qiime/qiime_software/python-2.7.3-release/bin/python /home/qiime/qiime_software/qiime-1.7.0-release/bin/make_2d_plots.py -b "SampleID,BarcodeSequence,LinkerPrimerSequence,Description" -i beta//unweighted_unifrac_pc.txt -o beta//unweighted_unifrac_2d_discrete/ -m map_run.txt 
+
+Stdout:
+
+Stderr:
+
+
+Logging stopped at 15:55:12 on 23 Nov 2015

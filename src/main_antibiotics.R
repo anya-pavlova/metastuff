@@ -1,7 +1,7 @@
 #EE and KA
 rm(list=ls(all=TRUE)); gc()
 
-current_directory <- "/home/anna/metagenome/16s_study"
+current_directory <- "/home/anna/metagenome/16s_antib"
 setwd(current_directory)
 
 library(data.table)
@@ -42,8 +42,9 @@ pathway.ee.ka <- ReadIni(path.to.config)
 
 # loading meta data for EE and KA groups
 # LoadMeta
-meta.list <- MetaLoading(pathway.ee.ka$meta.tables$meta.pairedsamples,
-                         pathway.ee.ka$meta.tables$meta.samplesgroups)
+meta.list <- MetaLoading(pathway$meta.tables$meta.pairedsamples,
+                         pathway$meta.tables$meta.samplesgroups)
+
 
 #loading all data
 name.family <- "otu_table_L4.txt"
@@ -86,7 +87,7 @@ ee.features <- ChooseFeaturesEE(family.ee, genus.ee, species.ee)
 ka.features <- ChooseFeaturesKA(family.ka, genus.ka, species.ka)
 
 # bacteria top for EE group
-outdir <- "/home/anna/metagenome/16s_study/out_ee_ka/"
+outdir <- "/home/anna/metagenome/16s_antib/out_ee_ka/"
 
 top.info.before <- GetTopInfo(species[rownames(species) %in% meta.list$data.samples.paired.ee$before,], "before")
 top.info.after <- GetTopInfo(species[rownames(species) %in% meta.list$data.samples.paired.ee$after,], "after")
@@ -121,6 +122,30 @@ top.species.ka.2 <- chooseTOPfeature(ka.features$species.ka.2, 85)
 
 top.species.ee <-list(top.species.ee.1=top.species.ee.1, top.species.ee.2=top.species.ee.2)
 top.species.ka <-list(top.species.ee.1=top.species.ka.1, top.species.ee.2=top.species.ka.2)
+
+
+mainDir <- "/home/anna/metagenome/16s_antib"
+subDir <- "out_ee_ka"
+
+if (file.exists(subDir)){
+  setwd(file.path(mainDir, subDir))
+} else {
+  dir.create(file.path(mainDir, subDir))
+  setwd(file.path(mainDir, subDir))
+  
+}
+
+mainDir <- "/home/anna/metagenome/16s_antib/out_ee_ka"
+subDir <- "heatmap"
+
+if (file.exists(subDir)){
+  setwd(file.path(mainDir, subDir))
+} else {
+  dir.create(file.path(mainDir, subDir))
+  setwd(file.path(mainDir, subDir))
+  
+}
+
 
 #Make HeatMap
 HeatMap(top.species.ee.1, 'out_ee_ka/heatmap/', 'species_EE_1')

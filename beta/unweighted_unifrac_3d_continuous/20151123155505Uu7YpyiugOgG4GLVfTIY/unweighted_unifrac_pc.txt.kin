@@ -1,0 +1,144 @@
+@kinemage {BarcodeSequence_unscaled}
+@dimension {PC1} {PC2} {PC3}
+@dimminmax -0.337338754633 0.568741949752 -0.318838845229 0.361051650844 -7.40179619518e-09 -7.40179619518e-09
+@master {points}
+@master {labels}
+@hsvcolor {red:#ff0000toblue:#0000ff1_0} 0.0 100.0 100.0
+@hsvcolor {white} 180.0 0.0 100.0
+@group { (n=3)} collapsible
+@balllist color=red:#ff0000toblue:#0000ff1_0 radius=0.00906080704385 alpha=0.75 dimension=3 master={points} nobutton
+{Y4} 0.568741949752 -0.0422128056151 -7.40179619518e-09
+{Y8} -0.337338754633 -0.318838845229 -7.40179619518e-09
+{Y9} -0.231403195119 0.361051650844 -7.40179619518e-09
+@labellist color=red:#ff0000toblue:#0000ff1_0 radius=0.00906080704385 alpha=0.75 dimension=3 master={labels} nobutton
+{Y4} 0.568741949752 -0.0422128056151 -7.40179619518e-09
+{Y8} -0.337338754633 -0.318838845229 -7.40179619518e-09
+{Y9} -0.231403195119 0.361051650844 -7.40179619518e-09
+@group {axes} collapsible
+@vectorlist {PC1 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+0.59717904724 -0.33478078749 -7.77188600494e-09 white
+@labellist {PC1 (68%)} dimension=3 on
+{PC1 (68%)}0.627037999602 -0.33478078749 -7.77188600494e-09 white
+@vectorlist {PC2 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+-0.354205692365 0.379104233386 -7.77188600494e-09 white
+@labellist {PC2 (32%)} dimension=3 on
+{PC2 (32%)}-0.354205692365 0.398059445056 -7.77188600494e-09 white
+@vectorlist {PC3 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+@labellist {PC3 (2.3e-14%)} dimension=3 on
+{PC3 (2.3e-14%)}-0.354205692365 -0.33478078749 -8.16048030519e-09 white
+@kinemage {Description_unscaled}
+@dimension {PC1} {PC2} {PC3}
+@dimminmax -0.337338754633 0.568741949752 -0.318838845229 0.361051650844 -7.40179619518e-09 -7.40179619518e-09
+@master {points}
+@master {labels}
+@hsvcolor {red:#ff0000toblue:#0000ff3_0} 0.0 100.0 100.0
+@hsvcolor {red:#ff0000toblue:#0000ff3_1} 120.0 100.0 100.0
+@hsvcolor {red:#ff0000toblue:#0000ff3_2} 240.0 100.0 100.0
+@hsvcolor {white} 180.0 0.0 100.0
+@group {Y4 (n=1)} collapsible
+@balllist color=red:#ff0000toblue:#0000ff3_0 radius=0.00906080704385 alpha=0.75 dimension=3 master={points} nobutton
+{Y4} 0.568741949752 -0.0422128056151 -7.40179619518e-09
+@labellist color=red:#ff0000toblue:#0000ff3_0 radius=0.00906080704385 alpha=0.75 dimension=3 master={labels} nobutton
+{Y4} 0.568741949752 -0.0422128056151 -7.40179619518e-09
+@group {Y8 (n=1)} collapsible
+@balllist color=red:#ff0000toblue:#0000ff3_1 radius=0.00906080704385 alpha=0.75 dimension=3 master={points} nobutton
+{Y8} -0.337338754633 -0.318838845229 -7.40179619518e-09
+@labellist color=red:#ff0000toblue:#0000ff3_1 radius=0.00906080704385 alpha=0.75 dimension=3 master={labels} nobutton
+{Y8} -0.337338754633 -0.318838845229 -7.40179619518e-09
+@group {Y9 (n=1)} collapsible
+@balllist color=red:#ff0000toblue:#0000ff3_2 radius=0.00906080704385 alpha=0.75 dimension=3 master={points} nobutton
+{Y9} -0.231403195119 0.361051650844 -7.40179619518e-09
+@labellist color=red:#ff0000toblue:#0000ff3_2 radius=0.00906080704385 alpha=0.75 dimension=3 master={labels} nobutton
+{Y9} -0.231403195119 0.361051650844 -7.40179619518e-09
+@group {axes} collapsible
+@vectorlist {PC1 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+0.59717904724 -0.33478078749 -7.77188600494e-09 white
+@labellist {PC1 (68%)} dimension=3 on
+{PC1 (68%)}0.627037999602 -0.33478078749 -7.77188600494e-09 white
+@vectorlist {PC2 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+-0.354205692365 0.379104233386 -7.77188600494e-09 white
+@labellist {PC2 (32%)} dimension=3 on
+{PC2 (32%)}-0.354205692365 0.398059445056 -7.77188600494e-09 white
+@vectorlist {PC3 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+@labellist {PC3 (2.3e-14%)} dimension=3 on
+{PC3 (2.3e-14%)}-0.354205692365 -0.33478078749 -8.16048030519e-09 white
+@kinemage {LinkerPrimerSequence_unscaled}
+@dimension {PC1} {PC2} {PC3}
+@dimminmax -0.337338754633 0.568741949752 -0.318838845229 0.361051650844 -7.40179619518e-09 -7.40179619518e-09
+@master {points}
+@master {labels}
+@hsvcolor {red:#ff0000toblue:#0000ff1_0} 0.0 100.0 100.0
+@hsvcolor {white} 180.0 0.0 100.0
+@group {AATGATACGGCGACCACCGAGATCTACAC (n=3)} collapsible
+@balllist color=red:#ff0000toblue:#0000ff1_0 radius=0.00906080704385 alpha=0.75 dimension=3 master={points} nobutton
+{Y4} 0.568741949752 -0.0422128056151 -7.40179619518e-09
+{Y8} -0.337338754633 -0.318838845229 -7.40179619518e-09
+{Y9} -0.231403195119 0.361051650844 -7.40179619518e-09
+@labellist color=red:#ff0000toblue:#0000ff1_0 radius=0.00906080704385 alpha=0.75 dimension=3 master={labels} nobutton
+{Y4} 0.568741949752 -0.0422128056151 -7.40179619518e-09
+{Y8} -0.337338754633 -0.318838845229 -7.40179619518e-09
+{Y9} -0.231403195119 0.361051650844 -7.40179619518e-09
+@group {axes} collapsible
+@vectorlist {PC1 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+0.59717904724 -0.33478078749 -7.77188600494e-09 white
+@labellist {PC1 (68%)} dimension=3 on
+{PC1 (68%)}0.627037999602 -0.33478078749 -7.77188600494e-09 white
+@vectorlist {PC2 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+-0.354205692365 0.379104233386 -7.77188600494e-09 white
+@labellist {PC2 (32%)} dimension=3 on
+{PC2 (32%)}-0.354205692365 0.398059445056 -7.77188600494e-09 white
+@vectorlist {PC3 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+@labellist {PC3 (2.3e-14%)} dimension=3 on
+{PC3 (2.3e-14%)}-0.354205692365 -0.33478078749 -8.16048030519e-09 white
+@kinemage {SampleID_unscaled}
+@dimension {PC1} {PC2} {PC3}
+@dimminmax -0.337338754633 0.568741949752 -0.318838845229 0.361051650844 -7.40179619518e-09 -7.40179619518e-09
+@master {points}
+@master {labels}
+@hsvcolor {red:#ff0000toblue:#0000ff3_0} 0.0 100.0 100.0
+@hsvcolor {red:#ff0000toblue:#0000ff3_1} 120.0 100.0 100.0
+@hsvcolor {red:#ff0000toblue:#0000ff3_2} 240.0 100.0 100.0
+@hsvcolor {white} 180.0 0.0 100.0
+@group {Y4 (n=1)} collapsible
+@balllist color=red:#ff0000toblue:#0000ff3_0 radius=0.00906080704385 alpha=0.75 dimension=3 master={points} nobutton
+{Y4} 0.568741949752 -0.0422128056151 -7.40179619518e-09
+@labellist color=red:#ff0000toblue:#0000ff3_0 radius=0.00906080704385 alpha=0.75 dimension=3 master={labels} nobutton
+{Y4} 0.568741949752 -0.0422128056151 -7.40179619518e-09
+@group {Y8 (n=1)} collapsible
+@balllist color=red:#ff0000toblue:#0000ff3_1 radius=0.00906080704385 alpha=0.75 dimension=3 master={points} nobutton
+{Y8} -0.337338754633 -0.318838845229 -7.40179619518e-09
+@labellist color=red:#ff0000toblue:#0000ff3_1 radius=0.00906080704385 alpha=0.75 dimension=3 master={labels} nobutton
+{Y8} -0.337338754633 -0.318838845229 -7.40179619518e-09
+@group {Y9 (n=1)} collapsible
+@balllist color=red:#ff0000toblue:#0000ff3_2 radius=0.00906080704385 alpha=0.75 dimension=3 master={points} nobutton
+{Y9} -0.231403195119 0.361051650844 -7.40179619518e-09
+@labellist color=red:#ff0000toblue:#0000ff3_2 radius=0.00906080704385 alpha=0.75 dimension=3 master={labels} nobutton
+{Y9} -0.231403195119 0.361051650844 -7.40179619518e-09
+@group {axes} collapsible
+@vectorlist {PC1 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+0.59717904724 -0.33478078749 -7.77188600494e-09 white
+@labellist {PC1 (68%)} dimension=3 on
+{PC1 (68%)}0.627037999602 -0.33478078749 -7.77188600494e-09 white
+@vectorlist {PC2 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+-0.354205692365 0.379104233386 -7.77188600494e-09 white
+@labellist {PC2 (32%)} dimension=3 on
+{PC2 (32%)}-0.354205692365 0.398059445056 -7.77188600494e-09 white
+@vectorlist {PC3 line} dimension=3 on
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+-0.354205692365 -0.33478078749 -7.77188600494e-09 white
+@labellist {PC3 (2.3e-14%)} dimension=3 on
+{PC3 (2.3e-14%)}-0.354205692365 -0.33478078749 -8.16048030519e-09 white

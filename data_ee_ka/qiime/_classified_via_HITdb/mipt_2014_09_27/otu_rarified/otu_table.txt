@@ -1,0 +1,12 @@
+# Constructed from biom file
+#OTU ID	v5-Len-07	v3-Len-30	v3-Len-22	v3-Len-34	v5-Len-03	v5-Len-04	v3-Len-29	v3-Len-15	v5-Len-01	v3-Len-14	taxonomy
+OTU1730	1.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	Bacteroidetes; Bacteroidia; Bacteroidales; Prevotellaceae; Prevotella; OTU1730|NN=Prevotella_copri_AB064923|D=96.7
+OTU1686	0.0	1.0	1.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Blautia; OTU1686|NN=Blautia_faecis_HM626178|D=96.2
+OTU1718	0.0	1.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; unclassified; OTU1718|NN=Blautia_stercoris_HM626177|D=94.9
+OTU1217	0.0	0.0	0.0	1.0	0.0	0.0	0.0	0.0	0.0	0.0	Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Roseburia; OTU1217|NN=Roseburia_inulinivorans_AJ270474|D=96.6
+OTU1363	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	0.0	0.0	Proteobacteria; Gammaproteobacteria; Enterobacteriales; Enterobacteriaceae; unclassified; OTU1363|NN=Enterobacter_cancerogenus_JN644583|D=95.9
+OTU1254	0.0	0.0	0.0	0.0	0.0	3.0	0.0	0.0	0.0	0.0	Firmicutes; Bacilli; Lactobacillales; Streptococcaceae; Streptococcus; OTU1254|NN=Streptococcus_vestibularis_AY188353|D=96.7
+OTU1150	0.0	0.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Faecalibacterium; OTU1150|NN=Faecalibacterium_prausnitzii_X85022|D=95.6
+OTU1028	0.0	0.0	0.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Blautia; OTU1028|NN=Ruminococcus_gnavus_JN713312|D=95.6
+Shigella_sonnei_HQ591457	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	1.0	0.0	Proteobacteria; Gammaproteobacteria; Enterobacteriales; Enterobacteriaceae; Shigella; Shigella_sonnei
+Raoultella_planticola_AF181574	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	1.0	Proteobacteria; Gammaproteobacteria; Enterobacteriales; Enterobacteriaceae; Raoultella; Raoultella_planticola

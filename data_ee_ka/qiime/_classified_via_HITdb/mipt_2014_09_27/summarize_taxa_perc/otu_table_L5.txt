@@ -1,0 +1,10 @@
+Taxon	v5.Len.07	v3.Len.30	v3.Len.22	v3.Len.34	v5.Len.03	v5.Len.04	v3.Len.29	v3.Len.15	v5.Len.01	v3.Len.14
+Bacteroidetes;Bacteroidia;Bacteroidales;Prevotellaceae;Prevotella	1.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+Firmicutes;Bacilli;Lactobacillales;Streptococcaceae;Streptococcus	0.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	0.0
+Firmicutes;Clostridia;Clostridiales;Lachnospiraceae;Blautia	0.0	0.5	1.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0
+Firmicutes;Clostridia;Clostridiales;Lachnospiraceae;Roseburia	0.0	0.0	0.0	1.0	0.0	0.0	0.0	0.0	0.0	0.0
+Firmicutes;Clostridia;Clostridiales;Lachnospiraceae;unclassified	0.0	0.5	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Faecalibacterium	0.0	0.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0
+Proteobacteria;Gammaproteobacteria;Enterobacteriales;Enterobacteriaceae;Raoultella	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	1.0
+Proteobacteria;Gammaproteobacteria;Enterobacteriales;Enterobacteriaceae;Shigella	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	1.0	0.0
+Proteobacteria;Gammaproteobacteria;Enterobacteriales;Enterobacteriaceae;unclassified	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	0.0	0.0

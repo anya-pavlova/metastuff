@@ -1,0 +1,12 @@
+Название метаболического пути по системе KEGG	KEGG ID пути	Витамин(ы)
+Retinol metabolism	ko00830	A
+Thiamine metabolism	ko00730	B1
+Riboflavin metabolism	ko00740	B2
+Pantothenate and CoA biosynthesis	ko00770	B5
+Vitamin B6 metabolism	ko00750	B6
+Biotin metabolism	ko00780	B7
+Folate biosynthesis	ko00790	B9
+One carbon pool by folate	ko00670	B9
+Ubiquinone and other terpenoid-quinone biosynthesis	ko00130	K
+Lipoic acid metabolism	ko00785	N
+Nicotinate and nicotinamide metabolism	ko00760	PP

@@ -1,0 +1,5 @@
+Taxon	v5.Len.07	v3.Len.30	v3.Len.22	v3.Len.34	v5.Len.03	v5.Len.04	v3.Len.29	v3.Len.15	v5.Len.01	v3.Len.14
+Bacteroidetes;Bacteroidia	1.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+Firmicutes;Bacilli	0.0	0.0	0.0	0.0	0.0	3.0	0.0	0.0	0.0	0.0
+Firmicutes;Clostridia	0.0	2.0	1.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0
+Proteobacteria;Gammaproteobacteria	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	1.0
