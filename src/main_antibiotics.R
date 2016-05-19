@@ -59,6 +59,7 @@ totalTable <- LoadProjects(projects.directory.path=pathway$main$project.folder,
 data.project.samples <- meta.list$data.samples.ee.ka.pair
 data.samples.ee.ka.pair <- meta.list$data.samples.ee.ka.pair
 
+
 #choosing project samples
 family <- ChooseProjectSamples(totalTable$family, data.project.samples)
 genus <- ChooseProjectSamples(totalTable$genus, data.project.samples)

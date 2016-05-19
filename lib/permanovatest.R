@@ -1,38 +1,12 @@
 library(vegan)
 
-top.species.ee <- chooseTOPfeature(species.ee, 85)
-top.species.ka <- chooseTOPfeature(species.ka, 85)
+top.species.ee <- chooseTOPfeature(species.ee, 85) # выбираются не нулевые бактерии для образцов ант.1.до+ант.1.после
+top.species.ka <- chooseTOPfeature(species.ka, 85) # выбираются не нулевые бактерии для образцов ант.2.до+ант.2.после
 
-a1 <- head(top.species.ee,1)
-a2 <- head(top.species.ka,3)
-
-t.aa <- UniteMatrices(a1,a2)
-#t.aa <- UniteMatrices(top.species.ee, top.species.ka)
-
-t.aa <- t.aa[,c(1:3)]
-
-t.aa.2 <- t(t.aa)
-
-fac <- as.character(rownames(t.aa.2))
-per <- adonis(t.aa.2~fac, permutations = 9999, method = "bray")
-
-
-
-vegdist(t.aa, method = 'bray')
-
-
-library(vegan)
-library(MASS)
-data(varespec)
-vare.dis <- vegdist(varespec)
-hh <- vegan::vegdist(t.aa)
-t.aa[1:2,1:2]
-rowSums(t.aa)
-
-bcdist(t.aa)
-dist.all<-bcdist(bact.for.samp.id.all)
-dist.all.m <- as.matrix(dist.all)
-
+s <- UniteMatrices(top.species.ee, top.species.ka) # объединяю их в одну матрицу
+s <- t(s) # транспонирую, так как adonis принимает факты, по которым смотреть различия, по строкам (как это правильно говорить? Я очень криво выражаюсь, интересно бы знать нормальные названия и может более правильную логику) 
+fac <- as.character(rownames(s)) # формирую фактор из названий бактерий
+per <- adonis(s~fac, permutations = 9999, method = "bray") #запускаю сам тест
 
 
 #test
